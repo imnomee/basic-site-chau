@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AF Fluence Chauffeurs | About Us</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Baloo+Chettan+2|Carter+One|Finger+Paint|Staatliches&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav>
+        <div class="logo"><h1>Affluence Chauffeurs</h1></div>
+        <div class="menu">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Serivces</a></li>
+            <li class="active"><a href="about.html">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+      </nav>
+      <hr />
+      <section>
+        <div class="left-side">
+          <img src="img/1.jpg" alt="" />
+        </div>
+        <div class="right-side">
+          <h1>Rental Cars From Just <span class="price">£30/Hour</span></h1>
+          <p>
+            Our drivers are well-experienced in providing an impeccable service
+            while our aim is to make your journey as comfortable, as classy and
+            as memorable as possible. Our Chauffeurs are dedicated to caring for
+            the VIP passengers with the upmost proficiency and care. You driver
+            are mostly driving all over the town so they have best knowledge
+            about all the routes so you can sit relax and enjoy the journey
+            without worrying about the route. Our drivers are very punctual so
+            they will arrive early at given address so you don’t waist you time
+            waiting for the transport.
+          </p>
+        </div>
+      </section>
+      <section class="contact">
+        <h3>Request a call back today...</h3>
+        <form id="contact_form">
+          <input type="text" name="name" placeholder="Your name..." />
+          <input type="email" name="email" placeholder="Your email..." />
+          <label for="preferred_time">Preferred time:</label>
+          <input
+            type="time"
+            name="preferred_time"
+            min="09:00"
+            max="18:00"
+            step="600"
+            title="Preferred Time"
+          />
+          <label for="service">Choose a Service:</label>
+          <select id="service">
+            <option value="e-class">Mercedes E-Class</option>
+            <option value="s-class">Mercedes S-Class</option>
+            <option value="v-class">Mercedes V-Class</option>
+          </select>
+          <button type="submit" class="submit_btn">send request</button>
+        </form>
+      </section>
+    </header>
+    <footer>Copyright &copy; 2020 - AF Fluence Chauffeurs</footer>
+  </body>
+</html>
