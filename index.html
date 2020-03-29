@@ -1,37 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <title>AF Fluence Chauffeurs | Home</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Baloo+Chettan+2|Carter+One|Finger+Paint|Staatliches&display=swap"
-      rel="stylesheet"
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <title>AFFLUENCE CHAUFFEURS</title>
   </head>
   <body>
-    <header class="site-header">
-      <nav>
-        <div class="logo"><h1>Affluence Chauffeurs</h1></div>
-        <div class="menu">
-          <ul>
-            <li class="active"><a href="index.html">Home</a></li>
-            <li><a href="#">Serivces</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="#">Contact Us</a></li>
+    <nav
+      class="
+      navbar
+      navbar-light
+      navbar-expand-xl"
+      id="myNav"
+    >
+      <div class="container">
+        <a href="#" class="navbar-brand"> Affluence Chauffeurs</a>
+        <button
+          class="navbar-toggler collapsed"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navBarMain"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navBarMain">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#fleet">Our Fleet</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#terms">Terms & Conditions</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact Us</a>
+            </li>
           </ul>
+          <a
+            class="btn  btn-sm btn-dark mt-2 my-xl-n2"
+            href="#book"
+            target="_blank"
+            >Book Now from £30</a
+          >
         </div>
-      </nav>
-      <hr />
-      <section>
-        <div class="left-side">
-          <img src="img/1.jpg" alt="" />
+      </div>
+    </nav>
+    <section
+      class="pt-9 col-11 mx-auto pt-md-12 pb-3 border-bottom overflow-hidden"
+      id="welcome"
+    >
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-12 col-md-5 col-lg-6 col-xl-7 order-md-2">
+            <!-- Image -->
+            <img
+              class="img-fluid minw-md-200 minw-lg-125 mb-9 mb-md-0"
+              src="af-icon.png"
+              alt="..."
+            />
+          </div>
+          <div class="col-12 col-md-7 col-lg-6 col-xl-5 order-md-1">
+            <!-- Heading -->
+            <h1 class="mb-4">
+              Rental Cars From Just <span class="text-info">£30/Hour</span>
+            </h1>
+
+            <!-- Text -->
+            <p class="mb-7 font-size-lg text-gray-500">
+              London is one of the world’s most iconic cities, and there is no
+              better way to explore this exciting city than to do so in one of
+              our luxurious vehicles that include Mercedes cars, MPV’s and
+              minibuses.
+            </p>
+            <p class="mb-7 font-size-lg text-gray-500">
+              We are one of the leading chauffeuring companies in the
+              chauffeuring industry and we offer a huge array of services while
+              covering all kinds of events from exhibitions to Airport
+              transfers.
+            </p>
+            <p class="mb-7 font-size-lg text-gray-500">
+              AFFLUENCE CHAUFFEURS has provided transportation for government
+              officials, corporate executives and even celebrities.
+            </p>
+
+            <!-- Button -->
+            <a
+              class="btn btn-primary"
+              href="#pages"
+              data-toggle="smooth-scroll"
+            >
+              Find Out More
+            </a>
+          </div>
         </div>
-        <div class="right-side">
-          <h1>Rental Cars From Just <span class="price">£30/Hour</span></h1>
-          <p>
+      </div>
+    </section>
+    <section
+      class="py-12 col-11 mx-auto bg-light border-bottom pb-3"
+      id="pages"
+      style="margin-top: 2%;"
+    >
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-10 col-lg-9 col-xl-10 text-center">
+          <!-- Heading -->
+          <h2 class="mb-3">Our Fleet</h2>
+
+          <!-- Subheading -->
+          <p class="mb-10 font-size-lg text-gray-500">
             Our drivers are well-experienced in providing an impeccable service
             while our aim is to make your journey as comfortable, as classy and
             as memorable as possible. Our Chauffeurs are dedicated to caring for
@@ -43,31 +137,330 @@
             waiting for the transport.
           </p>
         </div>
-      </section>
-      <section class="contact">
-        <h3>Request a call back today...</h3>
-        <form id="contact_form">
-          <input type="text" name="name" placeholder="Your name..." />
-          <input type="email" name="email" placeholder="Your email..." />
-          <label for="preferred_time">Preferred time:</label>
-          <input
-            type="time"
-            name="preferred_time"
-            min="09:00"
-            max="18:00"
-            step="600"
-            title="Preferred Time"
-          />
-          <label for="service">Choose a Service:</label>
-          <select id="service">
-            <option value="e-class">Mercedes E-Class</option>
-            <option value="s-class">Mercedes S-Class</option>
-            <option value="v-class">Mercedes V-Class</option>
-          </select>
-          <button type="submit" class="submit_btn">send request</button>
-        </form>
-      </section>
-    </header>
-    <footer>Copyright &copy; 2020 - AF Fluence Chauffeurs</footer>
+      </div>
+      <div class="row mx-auto" style="margin-top: 2%;">
+        <div class="col-12 col-md-4">
+          <!-- Card -->
+          <a class="card mb-7 bg-transparent text-body" href="#book">
+            <!-- Image -->
+            <img
+              class="img-thumbnail"
+              src="e-class.jpeg"
+              alt="Mercedes E-Class"
+            />
+
+            <!-- Body -->
+            <div class="card-body text-center">
+              <strong class="font-size-lg">Mercedes Benz E-Class</strong>
+              <hr class="my-1" />
+              <p class="text-muted" style="margin-bottom: 0;">
+                Executive class for upto 4 passengers
+              </p>
+            </div>
+          </a>
+        </div>
+        <div class="col-12 col-md-4">
+          <!-- Card -->
+          <a class="card mb-7 mb-md-0 bg-transparent text-body" href="#book">
+            <!-- Image -->
+            <img
+              class="img-thumbnail"
+              src="s-class.png"
+              alt="Mercedes S-Class"
+            />
+
+            <!-- Body -->
+            <div class="card-body text-center">
+              <strong class="font-size-lg">Mercedes Benz S-Class</strong>
+              <hr class="my-1" />
+              <p class="text-muted" style="margin-bottom: 0;">
+                Luxury Sedan for upto 4 passengers
+              </p>
+            </div>
+          </a>
+        </div>
+        <div class="col-12 col-md-4">
+          <!-- Card -->
+          <a class="card mb-7 mb-md-0 bg-transparent text-body" href="#book">
+            <!-- Image -->
+            <img
+              class="img-thumbnail"
+              height="768px"
+              src="v-class.jpeg"
+              alt="..."
+            />
+            <!-- Body -->
+            <div class="card-body text-center">
+              <strong class="font-size-lg">Mercedes Benz V-Class</strong>
+              <hr class="my-1" />
+              <p class="text-muted" style="margin-bottom: 0;">
+                Luxury transport for upto 7 passengers
+              </p>
+            </div>
+          </a>
+        </div>
+        <div class="col-12 col-md-12" style="margin-top: 1%;">
+          <!-- Card -->
+          <div class="card shadow pb-1">
+            <!-- Text -->
+            <p class="text-center text-gray-500">
+              Feel free to contact us if you have any special requirements.
+            </p>
+            <!-- Button -->
+            <a
+              class="btn btn-primary btn-sm col-2-sm col-4-md col-6-lg mx-auto"
+              href="mailto:amjad_farooq786@hotmail.com"
+              >Contact Us</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      class="py-12 col-11 pt-3 mx-auto pt-md-12 pb-3 border-bottom overflow-hidden"
+    >
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-8 col-xl-6 text-center">
+            <!-- Heading -->
+            <h2 class="mb-3">Our Services</h2>
+
+            <!-- Subheading -->
+            <p class="mb-10 font-size-lg text-gray-500">
+              Something that makes Shopper stand out against competitors.
+            </p>
+          </div>
+        </div>
+        <div class="row mb-10">
+          <div class="col-12 col-md-6 col-lg-4">
+            <!-- Card -->
+            <div class="card card-sm mb-7 border">
+              <div class="card-body d-flex align-items-center">
+                <!-- Image -->
+                <i class="fa fa-briefcase" aria-hidden="true"></i>&nbsp;
+                <!-- Title -->
+
+                <strong class="font-size-lg">
+                  Business Meetings
+                </strong>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <!-- Card -->
+            <div class="card card-sm mb-7 border">
+              <div class="card-body d-flex align-items-center">
+                <!-- Image -->
+                <i class="fa fa-car" aria-hidden="true"></i>&nbsp;
+
+                <!-- Title -->
+                <strong class="font-size-lg">
+                  Meet & Greet
+                </strong>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <!-- Card -->
+            <div class="card card-sm mb-7 mb-lg-0 border">
+              <div class="card-body d-flex align-items-center">
+                <!-- Image -->
+                <i class="fa fa-plane" aria-hidden="true"></i>&nbsp;
+
+                <!-- Title -->
+                <strong class="font-size-lg">
+                  Airport Transfers
+                </strong>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <!-- Card -->
+            <div class="card card-sm mb-7 mb-lg-0 border">
+              <div class="card-body d-flex align-items-center">
+                <!-- Image -->
+                <i class="fa fa-id-badge" aria-hidden="true"></i>&nbsp;
+
+                <!-- Title -->
+                <strong class="font-size-lg">
+                  Weddings and PR Events
+                </strong>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <!-- Card -->
+            <div class="card card-sm mb-7 mb-md-0 border">
+              <div class="card-body d-flex align-items-center">
+                <!-- Image -->
+                <i class="fa fa-globe" aria-hidden="true"></i>&nbsp;
+
+                <!-- Title -->
+                <strong class="font-size-lg">
+                  Tours and Sighseeing
+                </strong>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <!-- Card -->
+            <div class="card card-sm border">
+              <div class="card-body d-flex align-items-center">
+                <!-- Image -->
+                <i class="fa fa-shopping-basket" aria-hidden="true"></i>&nbsp;
+
+                <!-- Title -->
+                <strong class="font-size-lg">
+                  Shopping Tours and Travel
+                </strong>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-4">
+            <!-- List -->
+            <ul class="list-unstyled">
+              <li class="d-flex">
+                &#9885; Experienced Chauffeurs Service
+              </li>
+              <li class="d-flex mt-2">
+                &#9885; Corporate hospitality
+              </li>
+              <li class="d-flex mt-2">
+                &#9885; Financial roadshows
+              </li>
+              <li class="d-flex mt-2">
+                &#9885; PR events
+              </li>
+              <li class="d-flex mt-2">
+                &#9885; Competitive Prices
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-4">
+            <!-- List -->
+            <ul class="list-unstyled">
+              <li class="d-flex">
+                &#9885; Heathrow Airport
+              </li>
+              <li class="d-flex mt-2">
+                &#9885; London City Airport
+              </li>
+              <li class="d-flex mt-2">
+                &#9885; Gatwick Airport
+              </li>
+              <li class="d-flex mt-2">
+                &#9885; Biggin Hill
+              </li>
+              <li class="d-flex mt-2">
+                &#9885; Northolt
+              </li>
+              <li class="d-flex mt-2">
+                &#9885; Stansted Airport
+              </li>
+              <li class="d-flex mt-2">
+                &#9885; Farnborough Airport
+              </li>
+              <li class="d-flex mt-2">
+                &#9885; Battersea Heliport
+              </li>
+              <li class="d-flex mt-2">
+                &#9885; Luton Airport
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-4">
+            <!-- List -->
+            <ul class="list-unstyled">
+              <li class="d-flex">
+                &#9885; Arrive in style
+              </li>
+              <li class="d-flex mt-2">
+                &#9885; Priceless expertise
+              </li>
+              <li class="d-flex mt-2">
+                &#9885; A rich cultural experience
+              </li>
+              <li class="d-flex mt-2">
+                &#9885; Unrivalled professionalism
+              </li>
+              <li class="d-flex mt-2">
+                &#9885; Elite vehicles
+              </li>
+              <li class="d-flex mt-2">
+                &#9885; Personalised decorations
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="col-11 mx-auto spacer-y-3 pt-5 bg-dark">
+      <div class="container">
+        <div class="row">
+          <div class="col-4 col-md-4 mb-3 mb-md-0">
+            <h5 class="text-white">Our Cars</h5>
+            <ul class="list-unstyled">
+              <li class="py-0 py-md-1">
+                <a href="#" class="text-white">Mercedes-Benz E-Class</a>
+              </li>
+              <li class="py-0 py-md-1">
+                <a href="#" class="text-white">Mercedes-Benz S-Class</a>
+              </li>
+              <li class="py-0 py-md-1">
+                <a href="#" class="text-white">Mercedes-Benz V-Class</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-4 col-md-4 mb-3 mb-md-0">
+            <h5 class="text-white">Company</h5>
+            <ul class="list-unstyled">
+              <li class="py-0 py-md-1">
+                <a href="#" class="text-white">About us</a>
+              </li>
+              <li class="py-0 py-md-1">
+                <a href="#" class="text-white">Our Team</a>
+              </li>
+              <li class="py-0 py-md-1">
+                <a href="#" class="text-white">Careers</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-4 col-md-4 mb-3 mb-md-0">
+            <h5 class="text-white">Help &amp; Support</h5>
+            <ul class="list-unstyled">
+              <li class="py-0 py-md-1">
+                <a href="#" class="text-white">Contact us</a>
+              </li>
+              <li class="py-0 py-md-1">
+                <a href="#" class="text-white">Important information</a>
+              </li>
+              <li class="py-0 py-md-1">
+                <a href="#" class="text-white">FAQs</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <p class="text-white text-center">
+          &copy; 2020 Affluence Chauffeurs, London
+        </p>
+      </div>
+    </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
